@@ -1,0 +1,13 @@
+<h2>Crear Denuncia</h2>
+<div>
+    <label for="denunciado">Denunciado: </label>
+    <input id="denunciado" [(ngModel)]="denuncia.usuarioDenunciado" placeholder="id denunciado"/>
+    <label for="motivo">Motivo: </label>
+    <input type="text" size="50" id="motivo" [(ngModel)]="denuncia.motivo" placeholder="Escribe el motivo"/>
+</div>
+<div>
+    <button type="button" class="back" title="back"
+    (click)="goBack()">Go back</button>
+    <button type="button" class="create" title="create schedule"
+    (click)="createDenuncia()">Save</button>
+</div>

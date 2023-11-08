@@ -1,0 +1,10 @@
+<h2>Denuncias</h2>
+<ul class="denuncias">
+  <li *ngFor="let denuncia of denuncias" class="flex-container">
+    <a>
+      <span class="badge">id: {{denuncia._id}}</span> Motivo: {{denuncia.motivo}}
+    </a>
+    <button type="button" class="delete" title="delete denuncia"
+      (click)="delete(denuncia)">x</button>
+  </li>
+</ul>

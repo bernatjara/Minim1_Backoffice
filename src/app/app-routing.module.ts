@@ -8,6 +8,9 @@ import { UserCreateComponent } from './components/user-create/user-create.compon
 import { ScheduleCreateComponent } from './components/schedule-create/schedule-create.component';
 import { AsignaturasComponent } from './components/asignaturas/asignaturas.component';
 import { AsignaturasUserComponent } from './components/asignaturas-user/asignaturas-user.component';
+import { DenunciasComponent } from './components/denuncias/denuncias.component';
+import { DenunciasUserComponent } from './components/denuncias-user/denuncias-user.component';
+import { DenunciasCreateComponent } from './components/denuncias-create/denuncias-create.component';
 
 const routes: Routes = [
   {path: 'users', component: UsersComponent},
@@ -17,7 +20,11 @@ const routes: Routes = [
   {path: 'asignaturas', component: AsignaturasComponent},
   {path: 'user_create', component: UserCreateComponent},
   {path: 'schedule_create', component: ScheduleCreateComponent},
-  {path: 'asignatura_user/:id', component: AsignaturasUserComponent}
+  {path: 'asignatura_user/:id', component: AsignaturasUserComponent},
+  {path: 'denuncias', component: DenunciasComponent},
+  {path: 'denuncia_user/:id', component: DenunciasUserComponent},
+  {path: 'denuncia_create', component: DenunciasCreateComponent}
+
 ];
 
 @NgModule({

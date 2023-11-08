@@ -1,0 +1,7 @@
+<h2>Mis Denuncias</h2>
+<div *ngFor="let denuncia of denuncias">
+    <div class="space"><span>id: {{denuncia._id}}</span>
+        Denunciado: {{denuncia.usuarioDenunciado}} 
+        Motivo: {{denuncia.motivo}}</div>
+</div>
+<button type="button" (click)="goBack()">Go back</button>
